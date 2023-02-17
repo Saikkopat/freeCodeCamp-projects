@@ -1,0 +1,159 @@
+:root {
+	box-sizing: border-box;
+	font-size: calc(1vw + 0.6em);
+}
+
+@media (min-width: 50em) {
+	:root {
+		font-size: 1.125em;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: #283149;
+	color: #DBEDF3;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #F73859;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	padding: 5px;
+}
+nav header {
+	height: 15%;
+	font-size: 3em;
+	background-color: #F73859;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+.nav-link {
+	font-size: 1.1em;
+	font-style: normal;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	list-style: none;
+	height: 85%;
+	padding: 0;
+	margin-top: 0;
+}
+
+nav li {
+	background-color: #404B69;
+	height: calc((100% - 15%) / 7);
+	border: 5px solid #283149;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	position: absolute;
+	width: 85%;
+	height: 100%;
+	left: 15%;
+	padding: 1%;
+}
+
+section {
+	background-color: #404B69;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+section header {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: left;
+	color: #F73859;
+}
+
+section h3, section p, section h4, section h5 {
+	margin-left: 1em;
+}
+
+.snippet {
+	margin-left: 2em;
+	background-color: #283149;
+	display: block;
+	width: 40%;
+	padding: 1%;
+	font-size: 1rem;
+	border-radius: 10px;
+}
+
+samp.snippet {
+	background-color: #F73859;
+}
+
+.s-30 {
+	width: 30%;
+}
+
+.s-50 {
+	width: 50%;
+}
+
+table {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto 30%;
+	width: auto;
+	background-color: #283149;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+thead, tbody {
+	width: 100%;
+}
+
+tr {
+	display: flex;
+	justify-content: space-around;
+	padding: .5em;
+}
+
+thead {
+	background-color: #F73859;
+	border: 5px solid #F73859;
+	border-radius: 10px;
+	font-size: 1.1em;
+}

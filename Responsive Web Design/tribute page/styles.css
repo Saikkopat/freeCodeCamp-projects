@@ -1,0 +1,91 @@
+/*
+	Personal standard
+*/
+
+:root {
+	box-sizing: border-box;
+	font-size: calc(1vw + 0.6em);
+}
+
+@media (min-width: 50em) {
+	:root {
+	font-size: 1.125em;
+}
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+/*
+	Actual content
+*/
+
+body {
+	display: flex;
+	background-color: #E6E6E6;
+	color: #0F0F0F;
+}
+
+main {
+	background-color: #C5A880;
+	text-align: center;
+	margin: 30px 8px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+main figure {
+	background-color: #0F0F0F;
+	padding: 15px;
+	border-radius: inherit;
+}
+
+main figcaption {
+	padding-top: 15px;
+	color: #E6E6E6;
+}
+
+main p {
+	font-style: italic;
+	color: #532E1C;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+}
+
+ul {
+	max-width: 550px;
+	margin: 0 auto 50px auto;
+	text-align: left;
+	line-height: 1.6;
+}
+
+li {
+	margin: 16px 0;
+}
+
+#headline {
+	text-align: center;
+	margin: 50px 0;
+}
+
+blockquote {
+	font-style: italic;
+	max-width: 545px;
+	margin: 0 auto 50px auto;
+	text-align: left;
+}
+
+a {
+	color:#E6E6E6;
+}

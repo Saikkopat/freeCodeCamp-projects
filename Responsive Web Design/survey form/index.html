@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+		<style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&family=Poppins:ital,wght@0,400;1,200&display=swap');</style>
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<h1 id="title">freeCodeCamp Survey Form</h1>
+				<p id="description">Thank you for taking the time to help us improve the platform</p>
+			</header>
+			<article class="form-container">
+				<form id="survey-form" action="POST">
+					<fieldset>
+						<label for="name" id="name-label">Name</label>
+						<input type="text" id="name" placeholder="Enter your name" required />
+						<label for="email" id="email-label">Email</label>
+						<input type="email" name="" id="email" placeholder="Enter your email" required />
+						<label for="age" id="number-label"> Age (optional)</label>
+						<input type="number" name="age" min="13" max="120" placeholder="Age" id="number" />
+					</fieldset>
+					<fieldset>
+						<p class="questions">Which option best describes your current role?</p>
+						<select name="dropdown" id="dropdown" required>
+							<option value="">Select current role</option>
+							<option value="1">Student</option>
+							<option value="2">Full time job</option>
+							<option value="3">Full time Learner</option>
+							<option value="4">Prefer no to say</option>
+							<option value="5">Other</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<p class="questions">Would you recommend freeCodeCamp to a friend?</p>
+							<label>
+								<input type="radio" class="inline-block" name="recomend" value="1" required>
+								Definitely
+							</label>
+							<label>
+								<input type="radio" class="inline-block" name="recomend" value="2" required>
+								Maybe
+							</label>
+							<label>
+								<input type="radio" class="inline-block" name="recomend" value="3" required>
+								Not sure
+							</label>
+					</fieldset>					
+					<fieldset>
+						<p class="questions">What is your favorite feature of freeCodeCamp?</p>
+						<select name="" id="dropdown-feature" required>
+							<option value="">Select an option</option>
+							<option value="1">Challenges</option>
+							<option value="2">Projects</option>
+							<option value="3">Community</option>
+							<option value="4">Open Source</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<p class="questions">What would you like to see improved? (Check all that apply)</p>
+						<label>
+							<input type="checkbox" name="improves" value="1">Front-end Projects
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="2">Back-end Projects
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="3">Data Visualization
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="4">Challenges
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="5">Open Source Community
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="6">Gitter help rooms
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="7">Videos
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="8">City Meetups
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="9">Wiki
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="10">Forum
+						</label>
+						<label>
+							<input type="checkbox" name="improves" value="11">Aditional Courses
+						</label>
+					</fieldset>
+					<fieldset>
+						<p class="questions">Any comments or suggestions?</p>
+						<textarea name="additional" id="add-comment" cols="30" rows="10"></textarea>
+					</fieldset>
+					<fieldset>
+						<button id="submit" type="submit">Submit</button>
+					</fieldset>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

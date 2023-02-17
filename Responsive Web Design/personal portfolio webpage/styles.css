@@ -1,0 +1,258 @@
+:root {
+	box-sizing: border-box;
+	font-size: calc(1vw + 0.6em);
+	--teko: 'Teko', sans-serif;
+	--red: #DA0037;
+	--dark: #171717;
+	--gray: #444444;
+	--white: #EDEDED;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html, body, header, section, footer {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+section + section {
+	margin: 1em 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+h1, h2, h3, nav, p {
+	font-family: var(--teko);
+	color: var(--white);
+	margin: 0;
+}
+
+.red {
+	background-color: var(--red);
+}
+
+.dark {
+	background-color: var(--dark);
+}
+
+.gray {
+	background-color: var(--gray);
+}
+
+
+/*
+
+	MOBILE FIRST APPROACH
+
+*/
+
+/* NAVBAR */
+
+nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 10px 10px;
+}
+
+#logo {
+	display: flex;
+	flex-direction: inherit;
+	align-items: center;
+	margin-left: -2em;
+}
+
+#logo img {
+	width: 3.5em;
+	height: 3.5em;
+	margin-right: .7em;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 2em;
+}
+
+nav li {
+	font-size: 1.5em;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/efae78eb-f00e-41e9-9451-f61834c678d8/d613gsv-fbe49042-e428-4cef-ae94-f0a818fd9da1.png/v1/fill/w_894,h_894,strp/red_lantern_corps_symbol_by_mr_droy_d613gsv-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2VmYWU3OGViLWYwMGUtNDFlOS05NDUxLWY2MTgzNGM2NzhkOFwvZDYxM2dzdi1mYmU0OTA0Mi1lNDI4LTRjZWYtYWU5NC1mMGE4MThmZDlkYTEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sWQpDKGcM--5wAXwfHSg_9v9K0sw2OkKGfLsQuPickA");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5em;
+}
+
+#welcome-section h1 {
+	font-size: 4em;
+}
+
+#welcome-section em {
+	font-size: 1.2em;
+}
+
+#welcome-section p {
+	font-size: 2em;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+	padding: 2em 0;
+}
+
+#projects h2 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#card-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+}
+
+.card-image {
+	width: 20em;
+	height: 21em;
+	border-radius: 10px 10px 0 0;
+	border-bottom: var(--red) solid 2px;
+}
+
+.card {
+	background-color: var(--dark);
+	border-radius: 10px;
+	font-size: 1.1em;
+}
+
+.project-tile {
+	font-size: 1.5em;
+	margin: .2em 0;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+
+#contact h1 {
+	font-size: 4em;
+}
+
+#contact h1+p {
+	margin: -2em 0 3em 0;
+}
+
+#contact h1+p, .contact-details {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact p {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+#icon-wrapper {
+	font-size: .9em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 3em;
+}
+
+.contact-details {
+	color: var(--white);
+	font-size: 1.5em;
+}
+
+/* FOOTER  */
+
+footer {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: .5em;
+}
+
+footer p{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: .6em;
+	margin: 1em auto;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	nav {
+		font-size: .8em;
+		height: 2.5em;
+		overflow: hidden;
+	}
+
+	#logo img {
+		width: 2.2em;
+		height: 2.2em;
+	}
+
+	#welcome-section {
+		height: 100vh;
+	}
+
+	.card {
+		font-size: .7em;
+	}
+
+	#card-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#contact {
+		height: 100vh;
+	}
+
+	#icon-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+}
